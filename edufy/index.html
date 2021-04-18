@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Miniver&family=Nunito:wght@200&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<a href="https://icons8.com/icon/W0_fb6J3rnlv/menu"></a>
+<a href="https://icons8.com/icon/rS4NCjz3l7Bk/close-window"></a>
+
+     <title> Edufy </title>
+</head>
+<body style="background-color:#C2C5DA">
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">About Edufy</h1>
+            <p class="mb-8 leading-relaxed">Learning Disability is a matter of special concern to the student community because we often confuse a student's failure for a lack of intellect or indiscipline, when the true cause is often a deficiency in one or more of the ways the brain processes knowledge. Edufy is a global youth-led organization that uses games and fun worksheets to offer quality education to children with special needs. We want to achieve simplified education for all so that everyone receives the education they deserve.</p>
+            <div class="flex w-full md:justify-start justify-center items-end">
+              <div class="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
+              </div>
+            </div>
+            <div class="flex lg:flex-row md:flex-col">
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="logo.png">
+          </div>
+        </div>
+      </section>
+<div id="sideNav">
+    <nav>
+    <ul>
+      <li><a href="index.html"> Home</a></li>
+      <li><a href="sheets.html"> Worksheets</a></li>
+      <li><a href="game.html"> EduGame</a></li>
+      <li><a href="chatbot.html">EduBot</a></li>
+
+    </ul>
+    </nav>
+</div>
+<div id="menubtn">
+ <img src="https://img.icons8.com/doodle/48/4a90e2/menu.png" id="menu">
+</div>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    
+    sideNav.style.right="-250px";
+    
+    menubtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right="0";
+            menu.src = "https://img.icons8.com/offices/30/4a90e2/close-window.png";
+        
+        }
+        else{
+            sideNav.style.right="-250px";
+            menu.src = "https://img.icons8.com/doodle/48/4a90e2/menu.png";
+        }
+    }
+    </script>
+    </body>
+    </html>
